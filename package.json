@@ -1,0 +1,22 @@
+{
+  "name": "juliana-e-renato-lambdas",
+  "version": "1.0.0",
+  "description": "Lambda functions",
+  "main": "getGuests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TudorRotarus25/juliana-e-renato-lambdas.git"
+  },
+  "author": "Tudor Rotarus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TudorRotarus25/juliana-e-renato-lambdas/issues"
+  },
+  "homepage": "https://github.com/TudorRotarus25/juliana-e-renato-lambdas#readme",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}
