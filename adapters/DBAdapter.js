@@ -41,6 +41,19 @@ class DBAdapter {
       });
     });
   }
+
+  setGuestPreferences(guestId, rsvp, comments) {
+    const query = 'UPDATE `guests` SET `rsvp` = ?, `comments` = ?  WHERE `id` = ?;';
+
+    return new Promise((resolve, reject) => {
+      this.connection.query(query, [rsvp, comments, guestId], (error, result) => {
+        if (error) {
+          reject(error);
+        }
+        resolve(result.changedRows);
+      });
+    });
+  }
 }
 
 module.exports = DBAdapter;
